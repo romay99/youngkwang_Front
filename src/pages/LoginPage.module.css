@@ -1,0 +1,17 @@
+.container {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userInput {
+  margin-bottom: 8px;
+  width: 300px;
+  border-radius: 12px;
+}
+
+.customButton {
+  width: 300px;
+  margin-bottom: 8px;
+}

@@ -1,22 +1,12 @@
-import styled from "styled-components";
 import MovieComment from "./MovieComment";
 import { Button } from "react-bootstrap";
-
-const CommentSection = styled.div`
-  margin: 10px;
-`;
-
-const CommentInput = styled.input`
-  width: 80%;
-  height: 150px;
-  margin: 5px;
-`;
+import styles from "./MovieCommentSection.module.css";
 
 const MovieCommentSection = () => {
   return (
-    <CommentSection>
+    <div className={styles.commentSection}>
       <div>
-        <CommentInput></CommentInput>
+        <input className={styles.commentInput}></input>
         <Button variant="dark"> 댓글 입력</Button>
       </div>
       <MovieComment />
@@ -24,7 +14,7 @@ const MovieCommentSection = () => {
       <MovieComment />
       <MovieComment />
       <MovieComment />
-    </CommentSection>
+    </div>
   );
 };
 

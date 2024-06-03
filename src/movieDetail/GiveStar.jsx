@@ -1,22 +1,15 @@
-import styled from "styled-components";
 import Card from "react-bootstrap/Card";
 import { Button } from "react-bootstrap";
-
-const Container = styled.div`
-  flex-direction: column;
-`;
-
-const GiveStarButton = styled(Button)`
-  justify-content: center;
-  width: 100px;
-`;
+import styles from "./GiveStar.module.css";
 
 const GiveStar = () => {
   return (
-    <Container>
+    <div className={styles.container}>
       <Card.Img src="https://via.placeholder.com/20x30" />
-      <GiveStarButton variant="outline-dark">별점주기</GiveStarButton>
-    </Container>
+      <Button variant="outline-dark" className={styles.GiveStarButton}>
+        별점주기
+      </Button>
+    </div>
   );
 };
 
