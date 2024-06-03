@@ -1,16 +1,21 @@
-import MovieCard from './MovieCard';
+import MovieCard from "./MovieCard";
+import styled from "styled-components";
+
+const MoviePosterList = styled.div`
+  display: flex;
+`;
 
 const MovieCardList = (props) => {
   return (
-    <div style={{ backgroundColor: 'skyblue' }}>
-      <div style={{ fontSize: '30px' }}>장르 : " "</div>
-      <div style={{ display: 'flex' }}>
+    <div>
+      <div style={{ fontSize: "30px" }}>장르 : " "</div>
+      <MoviePosterList>
         <MovieCard />
         <MovieCard />
         <MovieCard />
         <MovieCard />
         <MovieCard />
-      </div>
+      </MoviePosterList>
     </div>
   );
 };

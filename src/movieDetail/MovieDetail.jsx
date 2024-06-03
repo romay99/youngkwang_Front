@@ -1,5 +1,6 @@
-import Card from 'react-bootstrap/Card';
-import styled from 'styled-components';
+import Card from "react-bootstrap/Card";
+import styled from "styled-components";
+import GiveStar from "./GiveStar";
 
 const MovieDetailContainer = styled.div`
   display: flex;
@@ -13,13 +14,13 @@ const MovieInfomation = styled.div`
   justify-content: center;
   border-style: solid;
   margin: 10px;
-  width: 200%;
+  width: 100;
 `;
 
 const MovieSysnopsis = styled.div`
   border-style: solid;
   margin: 10px;
-  width: 200%;
+  width: 100;
   height: 50%;
 `;
 
@@ -32,7 +33,7 @@ const MovieInfo = styled.span`
 const MovieDetail = () => {
   return (
     <MovieDetailContainer>
-      <Card style={{ width: '20rem', margin: '30px' }}>
+      <Card style={{ width: "20rem", margin: "30px" }}>
         <Card.Img variant="top" src="https://via.placeholder.com/60x80" />
       </Card>
       <MovieInfomationContainer>
@@ -44,6 +45,7 @@ const MovieDetail = () => {
         </MovieInfomation>
         <MovieSysnopsis>영화 줄거리</MovieSysnopsis>
       </MovieInfomationContainer>
+      <GiveStar />
     </MovieDetailContainer>
   );
 };
