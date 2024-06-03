@@ -1,16 +1,13 @@
-import styled from "styled-components";
 import MovieComment from "./MovieComment";
-
-const CommentSection = styled.div`
-  display: flex;
-`;
+import { Button } from "react-bootstrap";
+import styles from "./MovieCommentSection.module.css";
 
 const MovieCommentSection = () => {
   return (
-    <div>
+    <div className={styles.commentSection}>
       <div>
-        <input></input>
-        <button> 댓글 입력</button>
+        <input className={styles.commentInput}></input>
+        <Button variant="dark"> 댓글 입력</Button>
       </div>
       <MovieComment />
       <MovieComment />

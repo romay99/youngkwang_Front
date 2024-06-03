@@ -1,0 +1,8 @@
+.container {
+  flex-direction: column;
+}
+
+.giveStarButton {
+  justify-content: center;
+  width: 100px;
+}

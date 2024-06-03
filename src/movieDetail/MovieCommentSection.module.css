@@ -1,0 +1,9 @@
+.commentSection {
+  margin: 10px;
+}
+
+.commentInput {
+  width: 80%;
+  height: 150px;
+  margin: 5px;
+}

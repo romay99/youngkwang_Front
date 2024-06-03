@@ -1,17 +1,13 @@
-import styled from "styled-components";
-
-const Container = styled.div`
-  display: flex;
-`;
+import styles from "./MovieComment.module.css";
 
 const MovieComment = () => {
   return (
-    <Container>
+    <div className={styles.container}>
       <div>댓글</div>
       <div>작성자 ID</div>
       <div>작성일</div>
-      <div>별점</div>
-    </Container>
+      <div>별점</div> {/* 별점은 존재할때만 */}
+    </div>
   );
 };
 

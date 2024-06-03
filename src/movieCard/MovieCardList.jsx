@@ -1,10 +1,11 @@
-import MovieCard from './MovieCard';
+import MovieCard from "./MovieCard";
+import styles from "./MovieCardList.module.css";
 
 const MovieCardList = (props) => {
   return (
-    <div style={{ backgroundColor: 'skyblue' }}>
-      <div style={{ fontSize: '30px' }}>장르 : " "</div>
-      <div style={{ display: 'flex' }}>
+    <div>
+      <div style={{ fontSize: "30px" }}>장르 : " "</div>
+      <div className={styles.moviePosterList}>
         <MovieCard />
         <MovieCard />
         <MovieCard />

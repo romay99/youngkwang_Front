@@ -1,4 +1,4 @@
-import MovieCardList from '../movieCard/MovieCardList';
+import MovieCardList from "../movieCard/MovieCardList";
 
 const MainPage = (props) => {
   return (
