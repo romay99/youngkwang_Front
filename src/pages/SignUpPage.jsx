@@ -8,7 +8,7 @@ const SignUpPage = () => {
     email: "",
     name: "",
     password: "",
-    sex: "",
+    sex: false,
     birthdate: "",
   });
 
@@ -30,7 +30,16 @@ const SignUpPage = () => {
       <input className={styles.userInput} placeholder="Name" onChange={handleChange} name="name"></input>
       <input className={styles.userInput} placeholder="PassWord" onChange={handleChange} name="password"></input>
       <input className={styles.userInput} placeholder="Confirm PassWord"></input>
-      <input className={styles.userInput} placeholder="성별" onChange={handleChange} name="sex"></input>
+      <label for="">
+        남자
+        <input className={styles.userInput} placeholder="성별" onChange={handleChange} name="sex" type="radio" value="1"></input>
+      </label>
+      <br></br>
+      <label for="">
+        여자
+        <input className={styles.userInput} placeholder="성별" onChange={handleChange} name="sex" type="radio" value="0"></input>
+      </label>
+      <br></br>
       <input className={styles.userInput} placeholder="생일" onChange={handleChange} name="birthdate"></input>
       <Button
         onClick={() => {
